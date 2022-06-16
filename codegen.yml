@@ -1,0 +1,10 @@
+overwrite: true
+errorsOnly: true
+schema: 'graphql/generated/schema.graphql'
+generates:
+  graphql/generated/types.ts:
+    plugins:
+      - 'typescript'
+      - 'typescript-operations'
+    config:
+      reactApolloVersion: 3
